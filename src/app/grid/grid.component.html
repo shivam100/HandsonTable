@@ -1,3 +1,5 @@
-<pm-table *ngIf="data && data.length > 0" [data]="temp" [columnHeaders]="columnHeaders" [columnNames]="columnNames"></pm-table>
-<template #table>
-</template>
+<ng-container>
+    <pm-table *ngIf="data && data.length > 0" [data]="temp" [columnHeaders]="columnHeaders" [columnNames]="columnNames"
+        [renderers]="renderers"></pm-table>
+    <ng-container #table></ng-container>
+</ng-container>

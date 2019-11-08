@@ -1,7 +1,5 @@
-import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactoryResolver, ComponentRef, Output} from '@angular/core';
-import { Template } from '@angular/compiler/src/render3/r3_ast';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { EventEmitter } from 'events';
-import { Service } from './table.service';
 @Component({
     // tslint:disable-next-line: component-selector
     selector: 'pm-table',
@@ -9,12 +7,15 @@ import { Service } from './table.service';
     styleUrls: ['./table.component.css']
 })
 
-export class TableListComponent implements OnInit{
+export class TableListComponent implements OnInit {
     @Input() data: any[];
-    @Output() nestedTable: EventEmitter = new EventEmitter() ;
+    @Output() nestedTable: EventEmitter = new EventEmitter();
     temp: string[] = [];
     @Input() columnNames: any[];
     @Input() columnHeaders: any[];
+    @Input() renderers: any[];
+    settings: any;
+    flag: any;
     constructor() {
     }
     ngOnInit(): any {

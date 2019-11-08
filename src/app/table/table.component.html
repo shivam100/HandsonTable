@@ -1,17 +1,8 @@
-<hot-table 
-id="mainTable"
-class="hot"
-[colHeaders]="columnHeaders"
-[columns]="columnNames"
-[data]="data"
-[contextMenu]="true"
-[manualColumnFreeze]="true"
-[comments]="true"
-[mergeCells]="true"
-[stretchH]="last"
-[manualColumnResize]="true" 
-[manualRowResize]= "true"
-[autoColumnSize]="true"
-
-[settings]="settings" licenseKey="non-commercial-and-evaluation">
-</hot-table>
+<ng-container>
+    <hot-table id="mainTable" class="hot" [colHeaders]="columnHeaders" [rowHeaders]="true" [columns]="columnNames"
+        [data]="data" [contextMenu]="true" [manualColumnFreeze]="true" [comments]="true" [mergeCells]="true"
+        [stretchH]="'last'" [manualColumnResize]="true" [manualRowResize]="true" [autoColumnSize]="true"
+        [readOnly]="flag"
+        [settings]="settings" licenseKey="non-commercial-and-evaluation">
+    </hot-table>
+</ng-container>
