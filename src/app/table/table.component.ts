@@ -11,6 +11,7 @@ export class TableListComponent implements OnInit {
     @Input() data: any[];
     @Output() nestedTable: EventEmitter = new EventEmitter();
     temp: string[] = [];
+    @Input() mergeList: any;
     @Input() columnNames: any[];
     @Input() columnHeaders: any[];
     @Input() renderers: any[];

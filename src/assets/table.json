@@ -1,793 +1,88 @@
-[{
-    "name": "ID Identifier",
-    "end_byte": 3,
-    "start_byte": 0,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Vendor ID (VID)",
-            "end_bit": 0,
-            "start_bit": 15,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
+[
+    {
+        "data": [
+            {
+                "ID": 1,
+                "CompanyName": "Electronics Depot",
+                "Address": "2455 Paces Ferry Road NW",
+                "State": "Georgia",
+                "Zipcode": "",
+                "Phone": "(800) 595-3232",
+                "Fax": "(800) 595-3231",
+                "Website": "http://www.nowebsitedepot.com",
+                "City": [
+                    {
+                        "Tree": "1",
+                        "Leaves": "2",
+                        "Branches": "3"
+                    }
+                ]
+            },
+            {
+                "ID": 2,
+                "CompanyName": "XYZ",
+                "Address": "ABC",
+                "State": "Karnataka",
+                "Phone": "(800) 595-3232",
+                "Fax": "(800) 595-3231",
+                "Website": "NA",
+                "City": [
+                    {
+                        "Tree": "1",
+                        "Leaves": "2",
+                        "Branches": "3",
+                        "Root": "4"
+                    }
+                ]
+            },
+            {
+                "ID": 3,
+                "CompanyName": "WXY",
+                "Address": "ABC",
+                "State": [
+                    {
+                        "Tree": "1",
+                        "Leaves": "2"
+                    }
+                ],
+                "Phone": "(800) 595-3232",
+                "Fax": "(800) 595-3231",
+                "Website": "NA",
+                "City": [
+                    {
+                        "Tree": "1",
+                        "Leaves": "2"
+                    }
+                ]
+            },
+            {
+                "ID": 3,
+                "CompanyName": "WXY",
+                "Address": "ABC",
+                "State": [
+                    {
+                        "Tree": "1",
+                        "Leaves": "2"
+                    }
+                ],
+                "Phone": "(800) 595-3232",
+                "Fax": "(800) 595-3231",
+                "Website": "NA",
+                "City": [
+                    {
+                        "Tree": "1",
+                        "Leaves": "2"
+                    }
+                ]
             }
-        }
-    ]
-}, {
-    "name": "CMD Command",
-    "end_byte": 5,
-    "start_byte": 4,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Reserved",
-            "end_bit": 11,
-            "start_bit": 15,
-            "isSplitValueFlag": 1,
-            "values": {
-                "Generic": {
-                    "M.2": "0x0",
-                    "U.2": "0x1"
-                },
-                "AWS": {
-                    "M.2": "0x0",
-                    "U.2": "0x1"
-                },
-                "Generic QS2": {
-                    "M.2": "0x0",
-                    "U.2": "0x1"
-                }
+        ],
+        "merge": [
+            {
+                "row": 0,
+                "col": 0,
+                "rowspan": 3,
+                "colspan": 3
             }
-        }, {
-            "name": "Interrupt Disable (ID)",
-            "end_bit": 10,
-            "start_bit": 10,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Fast Back-to-Back Enable (FBE)",
-            "end_bit": 9,
-            "start_bit": 9,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "SERR# Enable (SEE)",
-            "end_bit": 8,
-            "start_bit": 8,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x1",
-                "AWS": "0x2",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Hardwired to 0",
-            "end_bit": 7,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Parity Error Response Enable (PEE)",
-            "end_bit": 6,
-            "start_bit": 6,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "VGA Palette Snooping Enable (VGA)",
-            "end_bit": 5,
-            "start_bit": 5,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Memory Write and Invalidate Enable (MWE)",
-            "end_bit": 4,
-            "start_bit": 4,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Special Cycle Enable (SCE)",
-            "end_bit": 3,
-            "start_bit": 3,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Bus Master Enable (BME)",
-            "end_bit": 2,
-            "start_bit": 2,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Memory Space Enable (MSE)",
-            "end_bit": 1,
-            "start_bit": 1,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "STS Device Status",
-    "end_byte": 7,
-    "start_byte": 6,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Detected Parity Error (DPE)",
-            "end_bit": 15,
-            "start_bit": 15,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Signated System Error (SSE)",
-            "end_bit": 14,
-            "start_bit": 14,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Received Master-Abort (RMA)",
-            "end_bit": 13,
-            "start_bit": 13,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Received Target Abort (RTA)",
-            "end_bit": 12,
-            "start_bit": 12,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Signated Target-Abort (STA)",
-            "end_bit": 11,
-            "start_bit": 11,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "DEVSEL# Triing (DEVT)This field is not applicable to PCIe implementations",
-            "end_bit": 9,
-            "start_bit": 10,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Master Data Parity Error Detected (DPD)",
-            "end_bit": 8,
-            "start_bit": 8,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Fast Back-to-Back Capable (FBC)Not supported by NVM Express",
-            "end_bit": 7,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Reserved",
-            "end_bit": 6,
-            "start_bit": 6,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "66 MHz Capable (C66)Not supported by NVM Express",
-            "end_bit": 5,
-            "start_bit": 5,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Capabilities List (CL)",
-            "end_bit": 4,
-            "start_bit": 4,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Interrupt Status (IS)",
-            "end_bit": 3,
-            "start_bit": 3,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Reserved",
-            "end_bit": 1,
-            "start_bit": 2,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }, {
-            "name": "Immediate Readiness",
-            "end_bit": 0,
-            "start_bit": 0,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "RID Revision ID",
-    "end_byte": 8,
-    "start_byte": 8,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Revision ID (RID)",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}, {
-    "name": "CC Class Code",
-    "end_byte": 11,
-    "start_byte": 9,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Base Class Code (BCC)",
-            "end_bit": 16,
-            "start_bit": 23,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x1",
-                "AWS": "0x1",
-                "Generic QS2": "0x1"
-            }
-        }, {
-            "name": "Sub Class Code (SCC)",
-            "end_bit": 8,
-            "start_bit": 15,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x8",
-                "AWS": "0x8",
-                "Generic QS2": "0x8"
-            }
-        }, {
-            "name": "Programmng Interface (PI)",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x2",
-                "AWS": "0x2",
-                "Generic QS2": "0x2"
-            }
-        }
-    ]
-}, {
-    "name": "CLS Cache Line Size",
-    "end_byte": 12,
-    "start_byte": 12,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Master Latency Timer (MLT)This register does not apply for PCI Express device and shall be hardwired to '0'",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "MLT Master Latency Timer",
-    "end_byte": 13,
-    "start_byte": 13,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Master Latency Timer (MLT)This register does not apply for PCI Express device and shall be hardwired to '0'",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "HTYPE Header Type",
-    "end_byte": 14,
-    "start_byte": 14,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Muti Function Device (MFD)",
-            "end_bit": 7,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }, {
-            "name": "Header Layout (HL)",
-            "end_bit": 0,
-            "start_bit": 6,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}, {
-    "name": "BIST Build in Self test",
-    "end_byte": 15,
-    "start_byte": 15,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "MBIST Capability (BC)",
-            "end_bit": 7,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Start BIST (SB)",
-            "end_bit": 6,
-            "start_bit": 6,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Reserved",
-            "end_bit": 4,
-            "start_bit": 5,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }, {
-            "name": "Completion Code (CC)",
-            "end_bit": 0,
-            "start_bit": 3,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "MLBAR (BAR0) Memory Register Base Address, lower 32-bit",
-    "end_byte": 19,
-    "start_byte": 16,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Base Address (BA)",
-            "end_bit": 14,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Reserved",
-            "end_bit": 4,
-            "start_bit": 13,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }, {
-            "name": "Prefetchable (PF)",
-            "end_bit": 3,
-            "start_bit": 3,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Type (TP)",
-            "end_bit": 1,
-            "start_bit": 2,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Resource Type Indicator (RTE",
-            "end_bit": 0,
-            "start_bit": 0,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "MUBAR (BAR1)Memory Register Base Address, upper 32-bits",
-    "end_byte": 23,
-    "start_byte": 20,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Base Address (BA)",
-            "end_bit": 0,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "IDBAR (BAR2) Index/Data Pair Register Base Address",
-    "end_byte": 27,
-    "start_byte": 24,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Base Address (BA)",
-            "end_bit": 3,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Reserved",
-            "end_bit": 1,
-            "start_bit": 2,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }, {
-            "name": "Resource Type Indicator (RTE)",
-            "end_bit": 0,
-            "start_bit": 0,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "BAR3 Reserved",
-    "end_byte": 31,
-    "start_byte": 28,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Reserved",
-            "end_bit": 0,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}, {
-    "name": "BAR4 Vendor Specific",
-    "end_byte": 35,
-    "start_byte": 32,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Vendor specific",
-            "end_bit": 0,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "BAR5 Vendor Specific",
-    "end_byte": 39,
-    "start_byte": 36,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Vendor specific",
-            "end_bit": 0,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }
-    ]
-}, {
-    "name": "CCPTR CardBus CIS Pointer",
-    "end_byte": 43,
-    "start_byte": 40,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Not support by NVM Express",
-            "end_bit": 0,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}, {
-    "name": "SS Sub System Identifiers",
-    "end_byte": 47,
-    "start_byte": 44,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Subsystem ID (SSID)",
-            "end_bit": 16,
-            "start_bit": 31,
-            "isSplitValueFlag": 1,
-            "values": {
-                "Generic": {
-                    "M.2": "",
-                    "U.2": "0x0",
-                    "M.2 2230": "",
-                    "M.2 2242": "",
-                    "M.2 2280": ""
-                },
-                "AWS": {
-                    "M.2": "",
-                    "U.2": "0x0",
-                    "M.2 2230": "",
-                    "M.2 2242": "",
-                    "M.2 2280": ""
-                },
-                "Generic QS2": {
-                    "M.2": "",
-                    "U.2": "0x0",
-                    "M.2 2230": "",
-                    "M.2 2242": "",
-                    "M.2 2280": ""
-                }
-            }
-        }, {
-            "name": "Subsystem Vendor ID (SSVID)",
-            "end_bit": 0,
-            "start_bit": 15,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x1B96",
-                "AWS": "0x1B96",
-                "Generic QS2": "0x1B96"
-            }
-        }
-    ]
-}, {
-    "name": "EROM Expansion ROM",
-    "end_byte": 51,
-    "start_byte": 48,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "ROM Base Address (RBA)",
-            "end_bit": 11,
-            "start_bit": 31,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "",
-                "AWS": "",
-                "Generic QS2": ""
-            }
-        }, {
-            "name": "Reserved",
-            "end_bit": 1,
-            "start_bit": 10,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }, {
-            "name": "EROM Enable",
-            "end_bit": 0,
-            "start_bit": 0,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}, {
-    "name": "CAP Capabilities Pointer",
-    "end_byte": 52,
-    "start_byte": 52,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Capability Pointer (CP)",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x40",
-                "AWS": "0x40",
-                "Generic QS2": "0x40"
-            }
-        }
-    ]
-}, {
-    "name": "INTR Interrupt Information",
-    "end_byte": 61,
-    "start_byte": 60,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Interrupt Pin (IPIN)",
-            "end_bit": 8,
-            "start_bit": 15,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x1",
-                "AWS": "0x1",
-                "Generic QS2": "0x1"
-            }
-        }, {
-            "name": "Interrupt Line (ILINE)",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}, {
-    "name": "MGNT Minimum Grant",
-    "end_byte": 62,
-    "start_byte": 62,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Grant (GNT) Not supported by NVM Express",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}, {
-    "name": "MLAT Maximum Latency",
-    "end_byte": 63,
-    "start_byte": 63,
-    "AllCustomerEnableFlag": 0,
-    "bits": [{
-            "name": "Latency (LAT) Not supported by NVM Express",
-            "end_bit": 0,
-            "start_bit": 7,
-            "isSplitValueFlag": 0,
-            "values": {
-                "Generic": "0x0",
-                "AWS": "0x0",
-                "Generic QS2": "0x0"
-            }
-        }
-    ]
-}
+        ]
+    }
 ]

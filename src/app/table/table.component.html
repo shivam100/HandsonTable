@@ -1,8 +1,7 @@
 <ng-container>
     <hot-table id="mainTable" class="hot" [colHeaders]="columnHeaders" [rowHeaders]="true" [columns]="columnNames"
-        [data]="data" [contextMenu]="true" [manualColumnFreeze]="true" [comments]="true" [mergeCells]="true"
+        [data]="data" [contextMenu]="true" [manualColumnFreeze]="true" [comments]="true" [mergeCells]="mergeList"
         [stretchH]="'last'" [manualColumnResize]="true" [manualRowResize]="true" [autoColumnSize]="true"
-        [readOnly]="flag"
         [settings]="settings" licenseKey="non-commercial-and-evaluation">
     </hot-table>
 </ng-container>
